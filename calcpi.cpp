@@ -53,7 +53,7 @@ void * calcRows(void *a){ //takes struct counStruct
 }
 
 
-//Basically implements Prof. Federl's suggested solution, although I add the partial sums using an external vector 
+//add the partial sums using an external vector 
 //where each thread has its own spot for a partial sum, in order to avoid race conditions/locks.
 uint64_t count_pixels(int r, int n_threads)
 {
